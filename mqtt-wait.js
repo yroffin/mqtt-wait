@@ -34,6 +34,8 @@ var local = mqtt.connect({
     "password": `${flags.lpassword}`
 });
 
+console.log('Local connect ...');
+
 local.on('connect', function () {
     console.log('Local running ...', flags.topic);
     local.subscribe(flags.topic);
