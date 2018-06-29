@@ -52,3 +52,14 @@ local.on('message', function (topic, message) {
     console.log(JSON.stringify(data, null, 2))
     process.exit(0)
 });
+
+
+var counter=0
+setInterval(go, 2000);
+
+function go() {
+  counter++;
+  
+  // This is the interesting line
+  process.stdout.write("Waiting for " + (counter * 2)+ " seconde(s).\r");
+}
