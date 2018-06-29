@@ -1,6 +1,6 @@
 {
   "name": "mgtt-wait",
-  "version": "1.0.0",
+  "version": "1.0.0+beta1",
   "license": "MIT",
   "scripts": {
     "start": "node mqtt-wait.js"

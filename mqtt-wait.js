@@ -61,5 +61,5 @@ function go() {
   counter++;
   
   // This is the interesting line
-  process.stdout.write("Waiting for " + (counter * 2)+ " seconde(s).\r");
+  console.log("Waiting for " + (counter * 2)+ " seconde(s).\r");
 }
