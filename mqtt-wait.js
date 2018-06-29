@@ -55,11 +55,11 @@ local.on('message', function (topic, message) {
 
 
 var counter=0
-setInterval(go, 2000);
+setInterval(go, 60000);
 
 function go() {
   counter++;
   
   // This is the interesting line
-  console.log("Waiting for " + (counter * 2)+ " seconde(s).\r");
+  console.log("Waiting for " + (counter * 60)+ " seconde(s).\r");
 }
